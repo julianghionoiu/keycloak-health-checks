@@ -16,6 +16,11 @@ jobs:
     name: Create GitHub Release
     runs-on: ubuntu-latest
     steps:
+      - name: Read the tag var
+        id: create_tag
+        run: |
+          tag=$(basename "${{ github.ref }}")
+          echo "::set-output name=tag::$tag"
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
