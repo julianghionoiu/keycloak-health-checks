@@ -9,7 +9,7 @@ on:
       - 17.**
 
 permissions:
-  deployments: write
+  contents: write
 
 jobs:
   release:
