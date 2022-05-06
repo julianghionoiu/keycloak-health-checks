@@ -8,6 +8,9 @@ on:
     tags:
       - 17.**
 
+permissions:
+  deployments: write
+
 jobs:
   release:
     name: Create GitHub Release
