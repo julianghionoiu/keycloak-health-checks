@@ -6,7 +6,7 @@ name: Java CI with Maven
 on:
   push:
     tags:
-      - v17.**
+      - *
 
 jobs:
   release:
